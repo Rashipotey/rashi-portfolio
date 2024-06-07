@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashi's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo"></a>
+            
+            <label class="logo">Rashi</label>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blogs" class="nav-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+        <canvas id="backdrop"></canvas>
+        <div class="banner">
+            <div>
+                <h3 class="banner-sub-title">Hi, I am</h3>
+                <h2 class="banner-title">Rashi Potey</h2>
+                <p class="banner-description">It's never too late to be who you'd have been.</p>
+                <button class="btn-primary">Resume</button>
+            </div>
+            <img class="banner-img" src="Images/rashi.jpg" alt="">
+        </div>
+    
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <h3 class="about-me">About Me</h3>
+            <p class="section-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ea velit excepturi natus! Illum accusamus ducimus dignissimos. Eaque eligendi, quia tempore, pariatur dolorem quae cupiditate molestias, amet adipisci qui corrupti!</p>
+        </section>
+
+        <section class="what-i-do" id="skills">
+            <h3 class="section-title">My Skills</h3>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="Images/javascript.jpeg" alt="">
+                    <p class="skill-name">Javascript</p>
+                    <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eius ipsum deserunt non ratione doloremque, esse officia amet aliquid fuga. Cupiditate incidunt totam voluptates hic sed nostrum sint molestias soluta.</p>
+                </div>
+                <div class="skill">
+                    <img src="Images/reactjs.png" alt="" class="react-js">
+                    <p class="skill-name">React JS</p>
+                    <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eius ipsum deserunt non ratione doloremque, esse officia amet aliquid fuga. Cupiditate incidunt totam voluptates hic sed nostrum sint molestias soluta.</p>
+                </div>
+                <div class="skill">
+                    <img src="Images/java.png" alt="">
+                    <p class="skill-name">Java</p>
+                    <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eius ipsum deserunt non ratione doloremque, esse officia amet aliquid fuga. Cupiditate incidunt totam voluptates hic sed nostrum sint molestias soluta.</p>
+                </div>
+                <div class="skill">
+                    <img src="Images/nodejs.png" alt="">
+                    <p class="skill-name">Node JS</p>
+                    <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eius ipsum deserunt non ratione doloremque, esse officia amet aliquid fuga. Cupiditate incidunt totam voluptates hic sed nostrum sint molestias soluta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h3 class="my-projects">Projects</h3>
+            <div>
+                <div class="project">
+                    <a href="https://rashipotey.github.io/WebWizard/" target="_blank">GDSC Web Wizards Website</a>
+                </div>
+                <div class="project">
+                    <a href="#">Netflix Clone</a>
+                </div>
+                <div class="project">
+                    <a href="#">Blogging Site</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="academics">
+            <h3 class="academic">Academics</h3>
+            <ul class="edu-list">
+                <li>
+                    <div class="experience">Secondary Education</div>
+                    <div class="progress">
+                        <div id="myBar1" class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">Higher Secondary Education</div>
+                    <div class="progress">
+                        <div id="myBar2" class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">Degree</div>
+                    <div class="progress">
+                        <div id="myBar3" class="bar"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div>
+            <h3 class="footer-title-connect">Let's Connect</h3>
+            <p class="connect-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero saepe deleniti quia reiciendis ad nesciunt laborum unde magnam laboriosam, rem fugiat obcaecati, labore quibusdam. Animi autem tempore molestiae enim?</p>
+            <div class="social-links">
+                <a href="#"><img src="Images/linkedin.png" alt=""></a>
+                <a href="#" style="font-size:x-large; font-weight: 500;">X</a>
+                <a href="#"><img src="Images/insta.png" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <h3 class="footer-title">Drop your LinkedIn URL/ E-mail</h3>
+            <form action="">
+                <input type="text" name="Name" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Your Email">
+                <input type="url" name="URL" id="url" placeholder="Your LinkedIn Profile">
+                <input type="text" placeholder="Message">
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
