@@ -1,5 +1,8 @@
-*{
+*,
+::after,
+::before{
     margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -225,15 +228,46 @@ p {
     padding: 30px;
 }
 
-.skill:hover{
-    background-color:rgb(228, 155, 255, 0.8) ;
+.skill:hover {
+    background-color: rgba(228, 155, 255, 0.8);
 }
+
+.skill:hover .js-img{
+    animation-direction: reverse;
+    animation-duration: 1s;
+    animation-name: flip;
+    animation-timing-function: linear;
+}
+
+.skill:hover .java-img{
+    animation-direction: reverse;
+    animation-duration: 1s;
+    animation-name: flip;
+    animation-timing-function: linear;
+}
+
+.skill:hover .node-img{
+    animation-direction: reverse;
+    animation-duration:1s;
+    animation-name: flip;
+    animation-timing-function: linear;
+}
+
+@keyframes flip {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 .skill img {
     overflow: clip;
     padding: 40px;
-    width: 90%;
-    height: 200px;
+    width:95%;
+    height: 210px;
 }
 
 .react-js{
@@ -409,8 +443,7 @@ input{
     background-color: #fff;
   }
 
-
-  @media only screen and (max-width:768px){
+   @media only screen and (width<400px){
 
     .nav-menu {
         position: fixed;
@@ -465,13 +498,13 @@ input{
     }
     
     .banner-sub-title{
-        font-size: 60px;
+        font-size: 40px;
     }
     .banner-title{
-        font-size: 110px;
+        font-size: 90px;
     }
     .banner-description{
-        font-size: 55px;
+        font-size: 30px;
         width: auto;
     }
     .btn-primary{
@@ -525,7 +558,7 @@ input{
     .connect-description{
         text-align: center;
         position: relative;
-        left: 45%;
+        left: 35%;
     }
     .footer div a{
         position: relative;
@@ -549,7 +582,7 @@ input{
     }
     .skill{
         position: relative;
-        left: 40px;
+        left: calc(100%/18);
     }
     .skill img{
         width: 50%;
@@ -560,6 +593,185 @@ input{
         height: auto;
         margin: auto;
     }
+
+    .social-links{
+        position: relative;
+        right: 5%;
+    }
+
+    .skill, .skill-description{
+        text-align: center;
+    }
+
+    .edu-list li{
+        margin:0px 100px 30px 100px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .btn{
+        position: relative;
+        left: 35%;
+        margin-bottom: 10%;
+    }
+} 
+
+
+@media screen and (400px<=width<=768px) {
+    .banner{
+        align-items: center;
+        position: relative;
+        left: 60%;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #090808;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        opacity: 2;
+    }
+
+    .nav-link {
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    .nav-link:hover{
+        color:#FF5F00;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+        height: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        left: 30%;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .banner-sub-title{
+        font-size: 220%;
+    }
+    .banner-title{
+        font-size: 450%;
+    }
+    .banner-description{
+        font-size: 300%;
+        width: auto;
+    }
+    .btn-primary{
+        width: 70%;
+        height: auto;
+    }
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .projects div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: calc(100%/12);
+    }
+    .banner-img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: calc(100%/28);
+    }
+    .footer-title-connect{
+        margin-top: 250px;
+        position: relative;
+        left: calc(100%/10);
+    }
+    .footer-title{
+        position: relative;
+        left: calc(100%/10);
+    }
+    form input{
+        position: relative;
+        left: calc(100%/18);
+    }
+    .btn{
+        position: relative;
+        left: calc(100%/2);
+    }
+    .connect-description{
+        text-align: center;
+        position: relative;
+        left: 43%;
+    }
+    .footer div a{
+        position: relative;
+        left: calc(100%/2);
+    }
+    .what-i-do h3, .my-projects, .academic, .project, .experience{
+        position: relative;
+        left: calc(100%/13);
+    }
+    section.about{
+        width: 100%;
+        position: relative;
+        left: calc(100%/18);
+    }
+    section.about .section-title{
+        text-align: center;
+    }
+    section.about .section-description{
+        text-align: center;
+        width: 100%;
+    }
+    .skill{
+        position: relative;
+        left: calc(100%/18);
+    }
+    .skill img{
+        width: 50%;
+        height: auto;
+    }
+    .skill-description{
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+
     .skill, .skill-description{
         text-align: center;
     }
@@ -573,5 +785,6 @@ input{
     .btn{
         position: relative;
         left: 45%;
+        margin-bottom: 10%;
     }
 }
